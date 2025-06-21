@@ -1,6 +1,8 @@
 # SCT_CS_2
 
 **Image Encryption &amp; Decryption Tool(GUI)**
+
+
 I am pleased to share a project I developed as part of my internship – a desktop-based Image Encryption Tool built using Python.
 
 This application allowed me to apply my understanding of GUI development with Tkinter and image processing using the Pillow library. It demonstrates how basic encryption techniques can be implemented visually, making the concepts more accessible and interactive.
