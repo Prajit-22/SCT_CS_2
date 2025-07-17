@@ -1,0 +1,165 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header-gradient {
+    background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+    color: #fff;
+    padding: 36px 0 18px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(100, 100, 100, 0.08);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    opacity: 0.95;
+}
+
+.container.card {
+    max-width: 900px;
+    margin: 32px auto 0 auto;
+    background: #fff;
+    padding: 32px 28px 28px 28px;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(80, 80, 120, 0.13);
+}
+
+form#mainForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.file-label {
+    display: inline-block;
+    background: #6a82fb;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(106, 130, 251, 0.08);
+    margin-bottom: 8px;
+}
+.file-label:hover, .file-label:focus {
+    background: #fc5c7d;
+    box-shadow: 0 4px 16px rgba(252, 92, 125, 0.13);
+}
+#fileLabelText {
+    pointer-events: none;
+}
+
+.operations {
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.operations label {
+    background: #f4f4f4;
+    border-radius: 6px;
+    padding: 7px 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.operations label:hover {
+    background: #e0e7ff;
+}
+#paramInput {
+    margin-bottom: 8px;
+    text-align: center;
+}
+#paramValue {
+    width: 60px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 6px;
+}
+.buttons {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 18px;
+    justify-content: center;
+}
+.buttons button {
+    background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(106, 130, 251, 0.08);
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+.buttons button:disabled {
+    background: #bdbdbd;
+    cursor: not-allowed;
+}
+.buttons button:hover:not(:disabled), .buttons button:focus:not(:disabled) {
+    background: linear-gradient(90deg, #fc5c7d 0%, #6a82fb 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 16px rgba(252, 92, 125, 0.13);
+}
+
+.previews {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.previews div {
+    text-align: center;
+    flex: 1 1 0;
+    min-width: 220px;
+    max-width: 300px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 16px 8px 18px 8px;
+    box-shadow: 0 2px 8px rgba(80, 80, 120, 0.06);
+    margin-bottom: 12px;
+}
+canvas {
+    border: 2px solid #e0e7ff;
+    margin-top: 8px;
+    max-width: 100%;
+    max-height: 260px;
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(106, 130, 251, 0.04);
+    transition: box-shadow 0.2s;
+}
+canvas:active, canvas:focus {
+    box-shadow: 0 4px 16px rgba(252, 92, 125, 0.13);
+}
+@media (max-width: 900px) {
+    .container.card {
+        padding: 18px 4vw 18px 4vw;
+    }
+    .previews {
+        flex-direction: column;
+        align-items: center;
+    }
+    .previews div {
+        max-width: 95vw;
+    }
+} 
